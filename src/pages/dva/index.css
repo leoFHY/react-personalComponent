@@ -1,0 +1,21 @@
+.normal {
+  font-family: Georgia, sans-serif;
+  margin-top: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.normal .btn {
+  width: 300px;
+}
+.normal code {
+  background: #f7f7f7;
+  height: 100px;
+  margin-top: 30px;
+  border: 1px solid #f7f7f7;
+}
+.panelCon {
+  display: flex;
+  flex-direction: column;
+}

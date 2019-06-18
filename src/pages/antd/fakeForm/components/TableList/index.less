@@ -1,0 +1,33 @@
+.billInfoItem {
+    display:flex;
+    background: #fff;
+    width: 95%;
+    margin: 0 auto;
+    justify-content: center;
+    div {
+        padding: 6px 4px;
+        border: 1px solid #d4d1d1;
+        border-right: none;
+        display: flex;
+        overflow-wrap: break-word; 
+    }
+    div:nth-child(even) {
+        width: 20%;
+        justify-content: flex-start;
+        align-items: center
+    }
+    div:nth-child(odd) {
+        width: 13%;
+        justify-content: flex-end;
+        align-items: center
+    }
+    div:last-child {
+        border-right: 1px solid #d4d1d1;
+    }
+}
+
+.noTopBorder {
+    div {
+        border-top: none
+    }
+}
