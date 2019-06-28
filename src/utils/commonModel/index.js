@@ -74,13 +74,15 @@ export const filterModel = function (options) {
             type: 'restSearchData',
             payload, // 改动，有些需求置空时需要传id
           })
-        }  else if (payload.type === 'page') {
-          payload = payload.data
-          yield put({
-            type: 'saveSearchData',
-            payload, // 改动，有些需求置空时需要传id
-          })
-        } else {
+        }  
+		// else if (payload.type === 'page') {//page 分页相关
+        //  payload = payload.data
+        //  yield put({
+        //    type: 'saveSearchData',
+        //    payload, // 改动，有些需求置空时需要传id
+        //  })
+        //} 
+		else {
           if (!isDownload){
              yield put({
                type: 'saveSearchDataStart',

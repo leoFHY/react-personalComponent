@@ -45,12 +45,16 @@ const index = ({ test, dispatch, filter }) => {
   };
   const onChange = page => {
     console.log('page', page);
-    dispatch({
-      type: 'filter/getPageList',
-      payload: {
-        pageNum: page,
-      },
-    });
+    this.props.dispatch({
+          type: 'filter/getPageList',
+          payload: {
+            type: "search",
+            data: {
+              pageNum: page,
+              pageSize: 10,
+            }
+          },
+        })
   };
   let { columns, dataSource, pagination } = filter;
   pagination = Object.assign(pagination, {
